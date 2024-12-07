@@ -1,0 +1,189 @@
+/* 基本スタイル */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f7; /* 薄い黄色 */
+  color: #5a4631; /* 茶色 */
+}
+
+/* ヘッダーのスタイル */
+.header {
+  background: #d4a373; /* 明るい茶色 */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ロゴと名前のスタイル */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px; /* ロゴの幅を指定 */
+  height: 80px; /* 幅と高さを同じにして正方形にする */
+  border-radius: 50%; /* 丸くする */
+  object-fit: cover; /* ロゴの中身を中央にフィットさせる */
+  margin-right: 1rem; /* テキストとの間隔 */
+  border: 2px solid white; /* 任意: 枠線を追加 */
+}
+
+.clinic-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* ナビゲーションメニュー */
+.nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+/* セクション */
+.section {
+  padding: 2rem;
+  text-align: center;
+}
+
+#services .services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+#services .service {
+  background: #ffe5b4; /* 薄いオレンジ */
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  width: 250px;
+  text-align: left;
+  color: #5a4631;
+}
+
+/* 歯科画像 */
+.full-width-image img {
+  width: 33.33%; /* 横幅を画面の1/3に設定 */
+  height: auto; /* 縦幅を横幅に比例 */
+  display: block;
+  margin: 0 auto; /* 中央揃え */
+}
+
+/* サービス画像 */
+.service {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.service-image {
+  width: 100%; /* コンテナの横幅に合わせる */
+  max-width: 300px; /* 最大幅を制限 */
+  height: auto; /* 縦幅を横幅に比例 */
+  border-radius: 8px; /* 角を丸くする（任意） */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 少し影をつける（任意） */
+}
+
+/* 開院時間の表を画像と同じ幅に設定 */
+.opening-hours-table {
+  width: 33.33%; /* 横幅を画面の1/3に設定 */
+  margin: 0 auto; /* 中央揃え */
+  border-collapse: collapse;
+  text-align: center;
+  background: #fff2cc; /* 明るい黄色 */
+  border: 1px solid #d4a373;
+}
+
+.opening-hours-table th,
+.opening-hours-table td {
+  padding: 0.75rem;
+  border: 1px solid #d4a373;
+}
+
+.opening-hours-table th {
+  background: #d4a373;
+  color: white;
+  font-weight: bold;
+}
+
+.opening-hours-table tr:nth-child(even) td {
+  background: #ffe5b4; /* 薄いオレンジ */
+}
+
+/* 地図と電話番号のスタイル */
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.map img {
+  width: 33.33%; /* 地図の横幅を画面の1/3に設定 */
+  height: auto; /* 縦幅を横幅に比例 */
+  margin-bottom: 1rem;
+}
+
+.phone-number {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #5a4631; /* 茶色 */
+}
+
+/* フォーム メモとして記載*/
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+  background-color: #f9f9f7; /* 薄い黄色 */
+  padding: 1rem;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d4a373;
+  border-radius: 5px;
+}
+
+form button {
+  background: #d4a373;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background: #b5835a; /* 濃い茶色 */
+}
+
+/* フッター */
+.footer {
+  background: #b5835a; /* 濃い茶色 */
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+}
